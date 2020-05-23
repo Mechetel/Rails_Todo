@@ -1,7 +1,7 @@
 FROM nginx
 
 RUN apt-get update -qq && apt-get -y install apache2-utils
-ENV RAILS_ROOT /var/www/rails_todo
+ENV RAILS_ROOT /var/www/rails_nginx_docker
 
 WORKDIR $RAILS_ROOT
 RUN mkdir log
